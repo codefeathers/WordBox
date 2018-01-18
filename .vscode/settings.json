@@ -3,7 +3,5 @@
 	"editor.renderWhitespace": "boundary",
 	"editor.insertSpaces": false,
 	"editor.tabSize": 4,
-	"files.eol": "\n",
-	"editor.wordWrap": "wordWrapColumn",
-	"editor.wordWrapColumn": 80
+	"files.eol": "\n"
 }
