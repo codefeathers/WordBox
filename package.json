@@ -1,0 +1,30 @@
+{
+	"name": "wordboxed",
+	"version": "0.0.1",
+	"description": "A fully sandboxed WordPress installation",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/codefeathers/wordboxed.git"
+	},
+	"keywords": [
+		"wordpress",
+		"node",
+		"express",
+		"php",
+		"wordboxed",
+		"sandbox"
+	],
+	"author": "Muthu Kumar (https://mkr.pw)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/codefeathers/wordboxed/issues"
+	},
+	"homepage": "https://github.com/codefeathers/wordboxed#readme",
+	"dependencies": {
+		"express": "^4.16.2"
+	}
+}
