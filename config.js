@@ -6,7 +6,7 @@ module.exports =
 	{
 		port: 8080,
 		phpBin: normalize(__dirname + '/php/php-cgi.exe'),
-		wpPath: normalize(__dirname + '/wp'),
+		wpPath: normalize(__dirname + '/public'),
 		sqlite: '',
 		plugins: []
 	}

@@ -1,6 +1,8 @@
 # w 🔥
 
-### WordBox—A truly modern development environment for WordPress
+### WordBox—A truly modern development environment for WordPress and PHP
+
+> WordBox is a portmanteau of WordPress and Sandbox. Although the name implies WordPress, you can really put in any PHP script using WordBox just as easily.
 
 WordBox is a truly modern WordPress site development (and deployment) environment.
 
@@ -11,7 +13,7 @@ Bring the power of Node.JS to your WordPress environment!
 Steps 1-3 will have an automated option later.
 
 1. Download php zip from https://php.net and place the extracted files under `/php`.
-2. Download WordPress from https://wordpress.org and place the extracted files under `/wp`.
+2. Download WordPress from https://wordpress.org and place the extracted files under `/public`.
 3. [Optional / Haven't tested] If you're on Linux, edit the config file to point to your `php-cgi` bin file.
 4. Run `npm install` to install dependencies (Express).
 5. Run `node .` to start the server.

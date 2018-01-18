@@ -25,7 +25,7 @@ chalk.yellow(`
 |            \\   \\ ;               |
 |             '---"                |
 ----------------------------------
-            WordBoxed
+             WordBox
  The modern WordPress environment
 ----------------------------------`) + chalk.green(`
    Server running at port ${config.port}
