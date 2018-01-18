@@ -1,6 +1,6 @@
 {
 	"name": "wordboxed",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"description": "A fully sandboxed WordPress installation",
 	"main": "server.js",
 	"scripts": {
