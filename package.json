@@ -1,6 +1,6 @@
 {
 	"name": "w",
-	"version": "0.1.0",
+	"version": "1.1.0",
 	"description": "WordBoxed—A truly modern WordPress site development (and deployment) environment.",
 	"main": "server.js",
 	"scripts": {
