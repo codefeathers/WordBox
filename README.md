@@ -1,8 +1,8 @@
 # w 🔥
 
-### WordBoxed—A truly modern development environment for WordPress
+### WordBox—A truly modern development environment for WordPress
 
-WordBoxed is a truly modern WordPress site development (and deployment) environment.
+WordBox is a truly modern WordPress site development (and deployment) environment.
 
 Bring the power of Node.JS to your WordPress environment!
 
@@ -18,4 +18,8 @@ Steps 1-3 will have an automated option later.
 
 ### Versioning
 
-Due to certain reasons, our versioning bumps from `v.0.1.0` to `v.1.1.0`. Due to this, the project should be considered unstable until `v.2.0.0` which will be WordBoxed's first stable release version.
+Thanks to @wbhob for donating the npm `w` package to me.
+
+Because npm versions are immutable, our public version number starts directly to `v.1.1.0`. The project should be considered unstable until `v.2.0.0` which will be WordBoxed's first stable release version.
+
+Like many software, `WordBox` will have an internal version number and external version number. The current internal version is `v.0.x.x` and external version is `v.1.x.x`. As the internal version reaches public release, it will skip over from `v.0.9.x` to `v.2.0.0` and catch up with its external version.
