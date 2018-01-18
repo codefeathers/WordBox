@@ -28,7 +28,7 @@ function runPHP(req, response, next, phpdir, phpCgi) {
 	else pathinfo = parts.pathname
 
 	const env = {
-		SERVER_SIGNATURE: "NodeJS/WordBoxed Server",
+		SERVER_SIGNATURE: "WordBox Server",
 		//The extra path information, as given in the requested URL. In fact, scripts can be accessed by their virtual path, followed by extra information at the end of this path. The extra information is sent in PATH_INFO.
 		PATH_INFO: pathinfo,
 		//The virtual-to-real mapped version of PATH_INFO.
@@ -70,7 +70,7 @@ function runPHP(req, response, next, phpdir, phpCgi) {
 				.keys(req.headers)
 				.map((x) => { x + ": " + req.headers[x] })
 				.reduce((a, b) => { a + b + "\n" }, ""),
-		SERVER_SOFTWARE: "NodeJS/WordBoxed", //The web server's software identity.
+		SERVER_SOFTWARE: "WordBox", //The web server's software identity.
 		SERVER_NAME: "localhost", //The host name or the IP address of the computer running the web server as given in the requested URL.
 		SERVER_ADDR: "127.0.0.1", //The IP address of the computer running the web server.
 		SERVER_PORT: 8011, //The port to which the request was sent.
