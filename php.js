@@ -1,6 +1,9 @@
 // The base work for this module was found at
 // https://npmjs.com/package/node-php
-// Credits to original author
+// All credits to original author
+// I've ES6'd and fixed deprecated Express functions
+
+'use strict'
 
 const url = require('url')
 const child = require('child_process')
