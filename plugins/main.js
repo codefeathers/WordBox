@@ -2,8 +2,9 @@
 
 function plugins() {
 	const { plugins } = require('../config')
-	plugins.forEach(element => {
-		require('../plugins/' + element + '/main.js')
+	plugins.forEach(plugin => {
+		require('../plugins/' + plugin + '/main.js')
+		console.log(`Loaded plugin ${plugin}...`)
 	})
 }
 
