@@ -6,11 +6,10 @@ const { EOL } = require('os')
 
 const express = require('express')
 const chalk = require('chalk')
-//const cookieParser = require('cookie-parser')
 
 const php = require('./php')
 const config = require('./config')
-const plugins = require('./plugins/main')
+const plugins = require('./plugins/loader')
 
 const htaccess = require('express-htaccess-middleware')
 const RewriteOptions = {
@@ -21,12 +20,13 @@ const RewriteOptions = {
 
 const app = express()
 
-//app.use(cookieParser())
-
 app
 	.use("/", php.cgi(config.publicPath, config.phpBin))
 	.use(htaccess(RewriteOptions))
-	.listen(config.port)
+
+plugins() // Load any plugins declared in config
+
+app.listen(config.port)
 
 const fancy = fs.readFileSync('./fancy.txt')
 const listeningMsg = (
@@ -36,5 +36,3 @@ const listeningMsg = (
 )
 
 console.log(listeningMsg)
-
-plugins() // Run any plugins you need to while server runs
