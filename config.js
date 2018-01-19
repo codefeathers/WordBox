@@ -5,8 +5,7 @@ const { normalize } = require('path')
 module.exports =
 	{
 		port: 8080,
-		phpBin: normalize(__dirname + '/php/php-cgi.exe'),
-		wpPath: normalize(__dirname + '/public'),
-		sqlite: '',
+		phpBin: normalize(__dirname + '/php/php-cgi'),
+		publicPath: normalize(__dirname + '/public'),
 		plugins: []
 	}
