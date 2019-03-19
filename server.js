@@ -12,9 +12,9 @@ const plugins = require('./plugins/loader');
 
 const app = express();
 
-app.use("/", php.cgi(config));
-
 plugins(app); // Load any plugins declared in config
+
+app.use("/", php.cgi(config));
 
 const fancy = fs.readFileSync('./fancy.txt');
 const listeningMsg = (

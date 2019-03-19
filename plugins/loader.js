@@ -1,12 +1,10 @@
-'use strict'
-
-const  { EOL } = require('os');
+'use strict';
 
 function plugins(app) {
-	const { plugins } = require('../config')
+	const { plugins = [] } = require('../config');
 	return plugins.map(plugin => {
 		require('../plugins/' + plugin)(app);
-		console.log(EOL + 'Loaded plugin ' + plugin + '...');
+		console.log('Loaded plugin ' + plugin + '...');
 	});
 };
 

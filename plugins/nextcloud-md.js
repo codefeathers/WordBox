@@ -1,0 +1,1 @@
+module.exports = app => app.use((req, res, next) => res.redirect('/index.php' + req.originalUrl));
