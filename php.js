@@ -5,14 +5,14 @@ const child = require('child_process');
 const path = require('path');
 const fs = require('fs');
 
-function runPHP(req, res, { cgi, ini, public }) {
+function runPHP(req, res, { cgi, ini, public: publicDir }) {
 	const parts = url.parse(req.url);
 	const query = parts.query;
 
-	let file = path.join(public, parts.pathname);
+	let file = path.join(publicDir, parts.pathname);
 
 	if (!fs.existsSync(file)) {
-		file = path.join(public, "index.php");
+		file = path.join(publicDir, "index.php");
 	} else if (fs.statSync(file).isDirectory()) {
 		file = path.join(file, "index.php");
 	}
