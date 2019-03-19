@@ -2,10 +2,12 @@
 
 const { normalize } = require('path')
 
-module.exports =
-	{
-		port: 8080,
-		phpBin: normalize(__dirname + '/php/php-cgi'),
-		publicPath: normalize(__dirname + '/public'),
-		plugins: []
-	}
+module.exports = {
+	port: 8080,
+	plugins: [],
+	php: {
+		cgi: normalize(__dirname + '/php/php-cgi'),
+		ini: normalize(__dirname + '/php.ini'),
+		public: normalize(__dirname + '/public'),
+	},
+};

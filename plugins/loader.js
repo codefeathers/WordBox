@@ -1,13 +1,13 @@
 'use strict'
 
-const  { EOL } = require('os')
+const  { EOL } = require('os');
 
-function plugins() {
+function plugins(app) {
 	const { plugins } = require('../config')
 	return plugins.map(plugin => {
-		require('../plugins/' + plugin + '/main.js')
-		console.log(EOL + 'Loaded plugin ' + plugin + '...')
-	})
-}
+		require('../plugins/' + plugin)(app);
+		console.log(EOL + 'Loaded plugin ' + plugin + '...');
+	});
+};
 
-module.exports = plugins
+module.exports = plugins;
